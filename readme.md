@@ -19,7 +19,3 @@ yarn dev
 # Build production
 
 yarn build
-
-# Link video demo trên localhost: https://youtu.be/j7pfr6WQRVc
-
-# Link application: http://18521321-18521681-cs105.vync.online

@@ -161,7 +161,7 @@ function init() {
 		orbit.enabled = !event.value;
 	});
 
-	// control add mesh, scene add control
+	// CONTROL ADD MESH, SCENE ADD CONTROL
 	control.attach(mesh);
 	scene.add(control);
 
@@ -212,14 +212,14 @@ function init() {
 	});
 
 	// REFLECTION MAP
-	const path = 'pisa/';
+	const path = 'MilkyWay/';
 	const urls = [
-		path + 'px.png',
-		path + 'nx.png',
-		path + 'py.png',
-		path + 'ny.png',
-		path + 'pz.png',
-		path + 'nz.png',
+		path + 'dark-s_px.png',
+		path + 'dark-s_nx.png',
+		path + 'dark-s_py.png',
+		path + 'dark-s_ny.png',
+		path + 'dark-s_pz.png',
+		path + 'dark-s_nz.png',
 	];
 	textureCube = new THREE.CubeTextureLoader().load(urls);
 	textureCube.encoding = THREE.sRGBEncoding;
@@ -253,7 +253,7 @@ function init() {
 	const pointsMaterial = new THREE.PointsMaterial({
 		size: 5,
 		sizeAttenuation: false,
-		map: new THREE.TextureLoader().load('disc.png'),
+		map: new THREE.TextureLoader().load('Wood.png'),
 		alphaTest: 0.5,
 		morphTargets: true,
 	});
